@@ -30,5 +30,8 @@ pipeline{
                 sh 'docker-compose down && docker-compose up -d'
             }
         }
+        stage('Child Job'){
+            build job: "child-job-pipeline", wait: true
+        }
     }
 }
