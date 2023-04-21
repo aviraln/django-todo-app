@@ -31,7 +31,9 @@ pipeline{
             }
         }
         stage('Child Job'){
-            build job: "child-job-pipeline", wait: true
+            steps{
+                build job: "child-job-pipeline", wait: true            
+            }
         }
     }
 }
