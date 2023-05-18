@@ -1,6 +1,6 @@
 version : "3.3"
 services : 
   web : 
-    image : aviraln/django-node-todo:latest
+    build : .
     ports : 
          - "8002:8002"
