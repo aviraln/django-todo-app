@@ -2,5 +2,6 @@ version : "3.3"
 services : 
   web : 
     image : aviraln/django-app:latest
+    build : .
     ports : 
          - "8002:8002"
